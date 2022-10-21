@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+
+<body>
+    <pre>
+        Задание:
+        Создайте функцию random(min, max), которая возвращает случайное значение в диапазоне от min до max.
+        Сделайте, чтобы сценарий заработал. Код генерации случайного значения найдите с помощью поисковой
+        системы или в заданиях из прошлых уроков.
+    </pre>
+    <script>
+        let maxNumber = +prompt("Сколько максимально раз вы хотите бросить шестигранный кубик");
+        let minNumber = +prompt("Сколько минимально раз вы хотите бросить шестигранный кубик");
+
+        function getRandomItnegralNumber(min, max) {
+            return Math.round(Math.random()*(max-min)+min);
+        }
+        console.log(getRandomItnegralNumber(maxNumber, minNumber));
+        getRandomItnegralNumber(maxNumber, minNumber);
+
+        // function getRandomItnegralNumber(min,max) {
+        //     // min=1;
+        //     // max=throwCount
+        //     var arr=[];
+        //     for (let i = 0; i < max; i++) {
+        //         // const result = random(1, 6);
+        //         arr[i]=min+i;
+        //     }
+        //         console.log(arr);
+        //         return arr;
+        // }
+        // getRandomItnegralNumber (1,6);
+
+        
+        
+        // function sum(x,y){
+        //     return x+y;
+        // }
+        // function sub(x,y){
+        //     return sum(4,4)-x-y;
+        // }
+
+        // sub(1, 2)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Дано массив. Создайте на оснвое значений этого массива два новых массива. 
+        В один массив поместите все четные значения, а во второй все нечетные.
+        Выведите на экран значения, которые вошли в первый массив и во второй массив.
+    </pre>
+    <script>
+        let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+        let oddElems = values.filter(item => item % 2 !== 0);
+        let evenElems = values.filter(item => item % 2 === 0);
+        console.log(oddElems)
+        console.log(evenElems)
+        // let arr=values.slice(2,5);
+        // let arr2=values.slice(0,2);
+        // console.log(arr);
+        // console.log(arr2);
+        // console.log(values);
+        // let new1=[];
+        // let new2=[];
+        // for(const new1 of values){
+        //     if (new1%2==0)
+        //     console.log(new1);
+        // }
+        // console.log(values);
+    </script>
+</body>
+</html>

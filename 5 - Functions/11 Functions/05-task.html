@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+
+<body>
+    <pre>
+        Задание:
+        Создайте функцию, которая принимает массив значений и возвращает массив с дублирующимися 
+        значениями или null если повторяющихся значений в массиве нет.
+    </pre>
+    <script>
+
+
+        function myFilter() {
+            let data = [2, 7, 10, 15, 2, 5, 6, 7, 99, 0, 11];
+            let sortedOut = [];
+            for (let i = 0; i <= data.length; i++) {
+                for (let i2 = 0; i2 < i; i2++) {
+                    if (data[i] === data[i2]) {
+                        sortedOut.push(data[i2]);
+                    }
+                    else if(sortedOut.lenght == 0){
+                        console.log(null)
+                }}
+            }
+            console.log(sortedOut)
+        }
+            
+        myFilter()
+
+    </script>
+</body>
+
+</html>

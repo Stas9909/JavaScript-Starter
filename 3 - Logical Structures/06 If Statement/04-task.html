@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Доработайте сценарий. Если пользователь заказывает товаров больше, чем есть на складе - сообщите ему об этом. Если пользователь заказывает
+        количество товаров, не привышающее количество на складе - расчитайте общую стоимость заказа.
+    </pre>
+    <script>
+        let productPrice = 101.5; // цена товара
+        let productQuantity = 50;  // количество единиц товара на складе
+
+        let count = prompt("Сколько единиц товара Вы хотите приобрести?", 1);
+        let totalSum = count * productPrice;
+        let leftInStorage = productQuantity - count;
+
+        if(leftInStorage<0){
+             alert("Вы заказали большее количество товара, чем есть в наличии");
+        }
+        else{
+            alert("Количество товара останется на складе после покупки" + leftInStorage);
+            alert("Общая стоимость " + totalSum);
+        }
+
+
+        // discount = total >= 500 && total < 1000 ? discount = total * 0.05 :
+		// 	discount = total >= 1000 && total < 1500 ? discount = total * 0.10 :
+		// 		discount = total < 500 ? discount = 0 : discount = total * 0.15;
+		// totalValue = delivery == true ? (delivery = 40, addition = "(учтена в стоимости покупки)", totalValue = total - discount + delivery) : (delivery = "доставка не заказана", addition = "", totalValue = total - discount);
+
+		// let result = `Ваша покупка c учетом скидки на сумму - ${totalValue.toFixed(1)}\r\nВаша скидка составляет - ${discount.toFixed(1)}\r\nСтоимость доставки - ${delivery} ${addition}`;
+		// alert(result);
+        
+        
+    </script>
+</body>
+</html>

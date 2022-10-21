@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Напишите сценарий, который должен получить у пользователя значение больше 10.
+        Если пользователь ввел значение меньше 10 запрсоите значение еще раз и так до тех пор пока 
+        пользователь не введет корректное значение
+        или пока не нажмет на клавишу ESC. Предусматривать обработку нечисловых значений не обязательно.
+    </pre>
+    <script>
+        // let figure=+prompt("Введите любое число больше 10 или или нажмите Esc")
+        // while(figure<10){
+        //     figure=+prompt("Введите любое число больше 10 или или нажмите Esc")
+        // }
+        // alert(figure);
+
+    
+        let figure = +prompt("Введите любое значение больше 10"); // или let value1 = 0;
+        while (figure < 10) {
+        figure = +prompt("Введите любое значение больше 10");
+        }
+        alert(figure);
+        console.log(figure);
+
+        
+        // let value2;
+        // do {
+        //     value2 = +prompt("Введите любое значение больше 10");
+        // }
+        // while (value2 <= 10);
+        // alert("Вы ввели " + value2);
+
+
+
+
+        // let figure=100
+        // let x=+prompt("Введите любое число больше 10 или или нажмите Esc")
+        // figureMoreThenTen:
+        // for(let x=0; x<=figure; x++){
+        //     if (x<10){
+        //         continue figureMoreThenTen;
+        //     }
+        //     else{
+        //         alert(x);
+        //     }
+        // }
+
+    </script>
+</body>
+</html>
+
